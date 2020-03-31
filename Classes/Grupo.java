@@ -3,27 +3,28 @@ package Classes;
 public class Grupo {
 	private String nombre;
 	private String[] integrantes;
-
-	public Grupo(String nombre) {
+	
+	public Grupo(String nombre, String[] integrantes) {
 		this.nombre = nombre;
+		this.integrantes = integrantes;
 	}
-
+	
 	public String getNombre() {
 		return this.nombre;
 	}
-
+	
 	public void setNombre(String nom) {
 		this.nombre = nom;
 	}
-
+	
 	public int getCantidadIntegrantes() {
 		int aux = 0;
-		for (int i = 0; i < this.integrantes.length; i++) {
+		for (int i = 0; i < this.integrantes.length;i++) {
 			aux++;
 		}
 		return aux;
 	}
-
+	
 	public void agregarIntergrante(String nombreIntegrante) {
 		int idx = 0;
 		do {
@@ -32,7 +33,7 @@ public class Grupo {
 		// mi maquina no reconoce los .add y .remove creo, o estoy haciendo algo mal
 		this.integrantes.add(nombreIntegrante);
 	}
-
+	
 	private int obtenerPosicionIntegrante(String nombreIntegrante) {
 		int aux = 0;
 		for (int idx = 0; idx < this.integrantes.length; idx++) {
@@ -44,7 +45,7 @@ public class Grupo {
 		}
 		return aux;
 	}
-
+	
 	public String obtenerIntegrante(int posicion) {
 		int pos = posicion - 1;
 		if (this.integrantes[pos] != null) {
@@ -53,7 +54,7 @@ public class Grupo {
 			return null;
 		}
 	}
-
+	
 	public String buscarIntegrante(String nombreIntegrante) {
 		String aux = null;
 		int i = 0;
@@ -65,7 +66,7 @@ public class Grupo {
 		}
 		return aux;
 	}
-
+	
 	public String removerIntegrante(String nombreIntegrante) {
 		int idx = 0;
 		String aux = null;
@@ -78,7 +79,7 @@ public class Grupo {
 		}
 		return aux;
 	}
-
+	
 	public void mostrarIntegrantes() {
 		int cantTotal = this.integrantes.length;
 		for (int i = 0; i < this.integrantes.length; i++) {
@@ -86,7 +87,7 @@ public class Grupo {
 		}
 		System.out.println("totalidad de participantes: " + cantTotal);
 	}
-
+	
 	public void mostrar() {
 		String nomGrupo = this.getNombre();
 		int cantTotal = this.integrantes.length;
@@ -96,12 +97,12 @@ public class Grupo {
 			System.out.println("Participante: " + this.integrantes[i]);
 		}
 	}
-
+	
 	public void vaciar() {
 		// tampoco me toma el clear().
 		this.integrantes.clear();
 	}
 
 	// Cambio de prueba para probar git
-
+	
 }
