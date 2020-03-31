@@ -101,7 +101,6 @@ public class Grupo {
 	public void vaciar() {
 		// tampoco me toma el clear().
 		this.integrantes.clear();
-		hola //--Error a modificar en branch de muestra
 	}
 
 	// Cambio de prueba para probar git
