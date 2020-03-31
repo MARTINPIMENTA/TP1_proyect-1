@@ -101,6 +101,7 @@ public class Grupo {
 	public void vaciar() {
 		// tampoco me toma el clear().
 		this.integrantes.clear();
+		hola 
 	}
 	
 }
