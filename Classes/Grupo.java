@@ -103,5 +103,7 @@ public class Grupo {
 		this.integrantes.clear();
 		hola 
 	}
+
+	// Cambio de prueba para probar git
 	
 }
