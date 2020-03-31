@@ -9,6 +9,7 @@ public class main {
         final String[] INTEGRANTES = {"Mariam", "Nacho", "Adrian", "Martin"};
 
         Grupo g1 = Grupo(NOMBRE_GRUPO1, INTEGRANTES);
+        aaaa //--Error2 a modificar en branch de prueba
     }
     // Hasta aca, esta generado el grupo, con su nombre e integrantes.
     // TODO: seguir con la pagina dos del TP y arreglar .add(), .remove(), .clear()
