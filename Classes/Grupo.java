@@ -67,6 +67,18 @@ public class Grupo {
 		return aux;
 	}
 	
+	public void checkearIntegrante(String nombreIntegrante) {
+		String aux = null;
+		int i = 0;
+		while (aux == null || i < this.integrantes.length) {
+			if (this.integrantes[i] == nombreIntegrante) {
+				aux = this.integrantes[i];
+				System.out.println("Existe " + aux));
+			}
+			i++;
+		}
+	}
+	
 	public String removerIntegrante(String nombreIntegrante) {
 		int idx = 0;
 		String aux = null;
